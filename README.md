@@ -1,6 +1,4 @@
-# spatiAL
-
-# Discovering genetic determinants of subcellular spatial biology by active learning
+# spatiAL: Discovering genetic determinants of subcellular spatial biology by active learning
 
 This repository contains the code and experiments conducted for my Master's thesis: **“Discovering genetic determinants of subcellular spatial biology by active learning
 ”**, where I developed and evaluated a deep learning framework for analyzing SPARCS-based imaging data to uncover novel insights into autophagy.
@@ -19,12 +17,12 @@ This repo is organized into several subdirectories, each corresponding to a majo
 
 | Folder              | Description                                                                 |
 |---------------------|-----------------------------------------------------------------------------|
-| `general/`          | Utility scripts, data loaders, and shared configuration or preprocessing code. |
-| `supervised/`       | Supervised training workflows, including baseline ConvNeXt models and multiclass classifier training. |
-| `semisupervised/`   | Experiments with semi-supervised learning using partially labeled datasets. |
-| `active_learning/`  | Simulated active learning loop for efficient annotation using uncertainty sampling. |
-| `ensembling/`       | Ensemble models and late fusion techniques to boost classification performance. |
-| `timecourse_images/`| Scripts and experiments involving temporal phenotypic profiling across timepoints (if applicable). |
+| `General/`          | Utility scripts, installation, data overview, data loaders, and subset creation and preprocessing code. |
+| `Supervised/`       | Supervised training workflows, including baseline ConvNeXt models and multiclass classifier training across various Cases. |
+| `Semisupervised/`   | Experiments with semi-supervised learning using partially labeled datasets with ConvNeXt and embedding distance calculations. |
+| `Active_learning/`  | Simulated active learning loop for efficient annotation using ConvNeXt. |
+| `Ensembling/`       | Ensemble models for autophagy multiclass classifer on various seeds. |
+| `timecourse_images/`| Timecourse images of wilttype (WT) and EI24 KO. |
 
 ---
 
@@ -37,12 +35,3 @@ This repo is organized into several subdirectories, each corresponding to a majo
 - Emphasized **model interpretability and uncertainty estimation** to enhance biological insight.
 - Validated using a **biologically validated autophagy 2↔1 classifier** and gRNA enrichment analysis.
 
----
-
-## Getting Started
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/your-thesis-repo.git
-   cd your-thesis-repo
-   ´``
